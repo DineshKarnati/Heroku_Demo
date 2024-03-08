@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import pandas as pd
 
-dataset = pd.read_csv(r"C:\Users\dines\OneDrive\Documents\Test_flask.csv")
+dataset = pd.read_csv(r"Test_flask.csv")
 # df.to_csv("Flast_tiutorial.csv")
 
 print(dataset.columns)
