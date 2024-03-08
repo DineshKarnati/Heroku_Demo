@@ -4,16 +4,16 @@ import pickle
 import os
 print(os.getcwd())
 
-app_flask = Flask(__name__)  # name is not standard
+app = Flask(__name__)  # name is not standard
 model = pickle.load(open("flask_test_model.pkl", 'rb'))
 
 
-@app_flask.route('/')
+@app.route('/')
 def home():
     return render_template('index.html')
 
 
-@app_flask.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     """
     for rendering results on html GUI
@@ -28,4 +28,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app_flask.run(debug=True)
+    app.run(debug=True)
