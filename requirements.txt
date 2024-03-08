@@ -1,0 +1,5 @@
+scikit-learn
+pandas
+numpy
+Flask
+gunicorn==19.9.0
